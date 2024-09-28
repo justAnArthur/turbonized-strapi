@@ -1,0 +1,10 @@
+{
+  "name": "turbonized-strapi",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "modules/*",
+    "configs/*"
+  ],
+  "author": "Arthur Kozubov <kozubov.arthur@gmail.com> (github.com/justAnArthur)"
+}
