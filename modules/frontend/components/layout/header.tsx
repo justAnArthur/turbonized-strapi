@@ -5,8 +5,12 @@ export function Header({ locale }: { locale: Locale }) {
   const anotherLocale = locales.find((_locale) => _locale !== locale)
 
   return (
-    <header className="section">
-      <Link href="/" locale={anotherLocale}>
+    <header className="section grid gap-3 py-4">
+      <Link href="/">
+        <h3>Turbonized Strapi</h3>
+      </Link>
+
+      <Link href="/" locale={anotherLocale} className="col-start-4 ml-auto">
         {anotherLocale}
       </Link>
     </header>
