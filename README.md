@@ -37,4 +37,4 @@ v20.15.1
 3. Use shared package for tsconfig and biome, set up linting and formating with .editorconfig
 4. ✔️ Setup localization
 5. ✔️ Set up dynamic blocks for web
-6. Set up caching, revalidating strategy with Strapi hooks
+6. ✔️ Set up caching, revalidating strategy with Strapi hooks

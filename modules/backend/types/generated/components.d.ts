@@ -51,6 +51,31 @@ export interface SharedMetaSocial extends Schema.Component {
   };
 }
 
+export interface ComponentsButton extends Schema.Component {
+  collectionName: 'components_shared_buttons';
+  info: {
+    displayName: 'Button';
+    icon: 'cursor';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface ComponentsBannerSlide extends Schema.Component {
+  collectionName: 'components_components_banner_slides';
+  info: {
+    displayName: 'BannerSlide';
+  };
+  attributes: {
+    image: Attribute.Media<'images'> & Attribute.Required;
+    title: Attribute.String;
+    description: Attribute.Text;
+    buttons: Attribute.Component<'components.button', true>;
+  };
+}
+
 export interface BlocksPageStandart extends Schema.Component {
   collectionName: 'components_blocks_page_standarts';
   info: {
@@ -90,41 +115,16 @@ export interface BlocksBanner extends Schema.Component {
   };
 }
 
-export interface ComponentsButton extends Schema.Component {
-  collectionName: 'components_shared_buttons';
-  info: {
-    displayName: 'Button';
-    icon: 'cursor';
-    description: '';
-  };
-  attributes: {
-    text: Attribute.String & Attribute.Required;
-  };
-}
-
-export interface ComponentsBannerSlide extends Schema.Component {
-  collectionName: 'components_components_banner_slides';
-  info: {
-    displayName: 'BannerSlide';
-  };
-  attributes: {
-    image: Attribute.Media<'images'> & Attribute.Required;
-    title: Attribute.String;
-    description: Attribute.Text;
-    buttons: Attribute.Component<'components.button', true>;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'shared.seo': SharedSeo;
       'shared.meta-social': SharedMetaSocial;
+      'components.button': ComponentsButton;
+      'components.banner-slide': ComponentsBannerSlide;
       'blocks.page-standart': BlocksPageStandart;
       'blocks.page-blog': BlocksPageBlog;
       'blocks.banner': BlocksBanner;
-      'components.button': ComponentsButton;
-      'components.banner-slide': ComponentsBannerSlide;
     }
   }
 }
