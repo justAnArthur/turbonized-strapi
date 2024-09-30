@@ -5,3 +5,6 @@ package-lock.json
 
 /.turbo
 /**/.turbo
+
+/modules/backend/.strapi
+/modules/frontend/.next

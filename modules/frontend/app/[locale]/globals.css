@@ -21,9 +21,9 @@ body {
 }
 
 @layer base {
-    .section {
-        @apply max-w-7xl mx-auto
-    }
+  .section {
+    @apply max-w-7xl mx-auto
+  }
 }
 
 @layer utilities {

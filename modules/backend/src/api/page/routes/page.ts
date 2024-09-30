@@ -2,12 +2,15 @@
  * page router
  */
 
-import {factories} from "@strapi/strapi"
-import type {CoreApi} from "@strapi/types";
+import { factories } from "@strapi/strapi"
+import type { CoreApi } from "@strapi/types"
 
-const defaultRouter = factories.createCoreRouter('api::page.page')
+const defaultRouter = factories.createCoreRouter("api::page.page")
 
-const customRouter = (innerRouter: CoreApi.Router.Router, extraRoutes: any[] = []) => {
+const customRouter = (
+  innerRouter: CoreApi.Router.Router,
+  extraRoutes: any[] = []
+) => {
   let routes
   return {
     get prefix() {
@@ -23,9 +26,9 @@ const customRouter = (innerRouter: CoreApi.Router.Router, extraRoutes: any[] = [
 
 const myExtraRoutes = [
   {
-    method: 'GET',
-    path: '/pages/findByTypeAndSlug/:type/:slug?',
-    handler: 'api::page.page.findByTypeAndSlug'
+    method: "GET",
+    path: "/pages/findByTypeAndSlug/:type/:slug?",
+    handler: "api::page.page.findByTypeAndSlug"
   }
 ]
 

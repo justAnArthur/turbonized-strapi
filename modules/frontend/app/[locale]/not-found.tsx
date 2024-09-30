@@ -1,5 +1,5 @@
-import {LocaleParams} from "@/app/[locale]/layout";
+import type { LocaleParams } from "@/app/[locale]/layout"
 
-export default function NotFound({params}: LocaleParams) {
-    return 'not-found'
+export default function NotFound({ params }: LocaleParams) {
+  return "not-found"
 }

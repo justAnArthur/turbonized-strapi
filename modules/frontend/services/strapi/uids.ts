@@ -1,9 +1,9 @@
-import {Localization, Page} from "@turbonized-strapi/backend";
+import type { Localization, Page } from "@turbonized-strapi/backend"
 
 export type UID = {
-    // collection
-    'api::page.page': Page,
+  // collection
+  "api::page.page": Page;
 
-    // single
-    'api::localization.localization': Localization
-}
+  // single
+  "api::localization.localization": Localization;
+};
