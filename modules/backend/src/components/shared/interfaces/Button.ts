@@ -3,6 +3,7 @@
 export interface Button {
   text: string;
 }
+
 export interface Button_Plain {
   text: string;
 }
@@ -10,4 +11,3 @@ export interface Button_Plain {
 export interface Button_NoRelations {
   text: string;
 }
-
