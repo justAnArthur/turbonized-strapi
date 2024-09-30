@@ -3,6 +3,7 @@
 export interface ButtonComponent {
   text: string;
 }
+
 export interface ButtonComponent_Plain {
   text: string;
 }
@@ -10,4 +11,3 @@ export interface ButtonComponent_Plain {
 export interface ButtonComponent_NoRelations {
   text: string;
 }
-

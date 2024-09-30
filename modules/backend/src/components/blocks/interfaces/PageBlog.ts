@@ -3,6 +3,7 @@
 export interface PageBlog {
   slug: string;
 }
+
 export interface PageBlog_Plain {
   slug: string;
 }
@@ -10,4 +11,3 @@ export interface PageBlog_Plain {
 export interface PageBlog_NoRelations {
   slug: string;
 }
-
