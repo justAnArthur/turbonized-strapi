@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_components_banner_slides",
+  "info": {
+    "displayName": "BannerSlide"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttons": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.button"
+    }
+  }
+}

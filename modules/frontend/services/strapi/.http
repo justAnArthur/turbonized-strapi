@@ -1,0 +1,4 @@
+###
+GET http://127.0.0.1:1337/api/pages/findByTypeAndSlug/page-standart/
+Content-Type: application/json
+Authorization: Bearer ***REMOVED***

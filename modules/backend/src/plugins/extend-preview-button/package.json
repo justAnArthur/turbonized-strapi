@@ -1,0 +1,11 @@
+{
+  "name": "extend-preview-button",
+  "version": "0.1.0",
+  "strapi": {
+    "displayName": "Extend Preview Button",
+    "name": "extend-preview-button",
+    "description": "Extending Preview Button",
+    "kind": "plugin"
+  },
+  "dependencies": {}
+}
