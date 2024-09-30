@@ -27,9 +27,9 @@ export default {
       // 'vi',
       // 'zh-Hans',
       // 'zh',
-    ],
+    ]
   },
   bootstrap(app: any) {
-    console.log(app);
-  },
-};
+    console.log(app)
+  }
+}
