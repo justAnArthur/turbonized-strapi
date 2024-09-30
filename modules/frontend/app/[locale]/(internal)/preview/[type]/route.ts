@@ -1,21 +1,10 @@
-import { blogPrefix } from "@/services/strapi/pages"
 import { draftMode } from "next/headers"
 import { notFound, redirect } from "next/navigation"
+import { handlePagePrefix } from "@/app/[locale]/(internal)/preview/[type]/handle-page-prefix"
 
 type TypeParams = {
   params: {
-    type: string;
-  };
-};
-
-function handlePagePrefix(pageType: string | null) {
-  switch (pageType) {
-    case "page-standart":
-      return ""
-    case "page-blog":
-      return `/${blogPrefix}`
-    default:
-      return ""
+    type: string
   }
 }
 

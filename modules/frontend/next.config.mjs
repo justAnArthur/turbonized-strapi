@@ -6,6 +6,10 @@ const nextConfig = {
     return {
       afterFiles: [
         {
+          source: "/:locale/revalidate",
+          destination: "/:locale/revalidate"
+        },
+        {
           source: "/:locale/preview/:type",
           destination: "/:locale/preview/:type"
         },
