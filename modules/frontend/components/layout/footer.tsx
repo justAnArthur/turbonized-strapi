@@ -5,8 +5,6 @@ import { Link } from "@/lib/i18n/navigation"
 export async function Footer({ locale }: { locale: Locale }) {
   const blogs = await fetchPagesByTypeAndSlug({ type: 'page-blog', locale }, { populate: { type: { populate: '*' } } })
 
-  console.log({ blogs })
-
   return (
     <footer className="section grid grid-cols-4 gap-3 py-4">
       <h3>Turbonized Strapi</h3>

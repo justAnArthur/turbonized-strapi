@@ -26,12 +26,6 @@ export default factories.createCoreController(
           }
         })
 
-      console.log(JSON.stringify(results, null, 2), {
-        typeName,
-        slug,
-        sanitized
-      })
-
       results = results?.filter(({ type: [type] = [] }) => {
         return (
           type.__component === "blocks." + typeName &&
