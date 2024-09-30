@@ -7,7 +7,8 @@ import { SeoComponent_NoRelations } from '../../../../components/shared/interfac
 export interface Page {
   id: number;
   attributes: {
-    createdAt: Date;    updatedAt: Date;    publishedAt?: Date;    type: any;
+    createdAt: Date;    updatedAt: Date;    publishedAt?: Date;    internalName: string;
+    type: any;
     blocks: any;
     seo: SeoComponent;
     locale: string;
@@ -16,7 +17,8 @@ export interface Page {
 }
 export interface Page_Plain {
   id: number;
-  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  type: any;
+  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  internalName: string;
+  type: any;
   blocks: any;
   seo: SeoComponent_Plain;
   locale: string;
@@ -25,7 +27,8 @@ export interface Page_Plain {
 
 export interface Page_NoRelations {
   id: number;
-  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  type: any;
+  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  internalName: string;
+  type: any;
   blocks: any;
   seo: SeoComponent_NoRelations;
   locale: string;
@@ -34,7 +37,8 @@ export interface Page_NoRelations {
 
 export interface Page_AdminPanelLifeCycle {
   id: number;
-  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  type: any;
+  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  internalName: string;
+  type: any;
   blocks: any;
   seo: SeoComponent_Plain;
   locale: string;
