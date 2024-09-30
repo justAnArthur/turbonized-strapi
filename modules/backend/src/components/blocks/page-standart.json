@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_page_standarts",
+  "info": {
+    "displayName": "PageStandart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    }
+  }
+}
