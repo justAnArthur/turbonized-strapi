@@ -57,7 +57,7 @@ v20.15.1
 > create database "<name>"; // change in .env
 ```
 
-`modules/backend/turbonized-strapi.sql` (and `.sql.gz`) is a dump of the local database, PostgreSQL 16; load it with `psql -d <name> -f modules/backend/turbonized-strapi.sql` to start with content.
+The repo no longer ships a database dump: it held admin credentials and was removed from history. Strapi creates an empty schema on first start; add content through the admin panel.
 
 ### Start
 
